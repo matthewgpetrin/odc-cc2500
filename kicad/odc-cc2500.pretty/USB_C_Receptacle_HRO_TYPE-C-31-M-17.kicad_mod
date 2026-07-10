@@ -1,0 +1,332 @@
+(footprint "USB_C_Receptacle_HRO_TYPE-C-31-M-17"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "USB Type-C receptacle for USB 2.0, 6 pin, https://omo-oss-file.thefastfile.com/portal-saas/new2023011311465142457/cms/file/134891b2-9b01-4104-89d3-96207243f692.pdf")
+	(tags "usb usb-c 2.0 pd")
+	(property "Reference" "REF**"
+		(at 0 -5.25 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2d0bb517-b871-4b48-8957-7aa28fcf1f09")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "USBC"
+		(at 0 4.75 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b399bf8f-88fc-4179-b9f2-c7b48ebf83fc")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "42c77ddb-b2a7-4c97-beed-478e26af6f76")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Header, USBC, Power Only, 6 Pin, Right Angle"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d55b34d3-7742-4c9a-bfa0-cb3e5846893e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Amphenol ICC"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "694794bf-65f3-4966-8358-8ff949783894")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mfr. PN" "10164359-00011LF"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6661b6af-70e6-4026-9c0a-cc0dd8f36d0b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Digikey PN" "609-10164359-00011LFCT-ND"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "815380a9-6896-4cbf-a29f-85e132c49f78")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser PN" "649-10164359-00011LF"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3b89ea6d-9445-4927-93b5-f30a0cce10df")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -4.58 -1.9)
+		(end -4.58 -0.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "796ca958-e4af-4b5d-9449-594e70cd1cda")
+	)
+	(fp_line
+		(start -4.58 2)
+		(end -4.58 3.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dbe5ec39-ea53-4769-977c-169f9160c955")
+	)
+	(fp_line
+		(start 4.58 -1.9)
+		(end 4.58 -0.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e6352e6f-51bc-40ac-98dc-8258c098ccf0")
+	)
+	(fp_line
+		(start 4.58 2)
+		(end 4.58 3.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aaf78f0a-3a53-4fed-bb55-383289467bc6")
+	)
+	(fp_line
+		(start -5.32 -4.48)
+		(end -5.32 3.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f8b06e5f-1c53-40ba-a3cc-2587b39d1fe7")
+	)
+	(fp_line
+		(start -5.32 -4.48)
+		(end 5.32 -4.48)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "61227b46-efe1-45a8-abf1-3934ae35972c")
+	)
+	(fp_line
+		(start -5.32 3.9)
+		(end 5.32 3.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "760f3a7d-5572-4f4f-9086-2527b7966be9")
+	)
+	(fp_line
+		(start 5.32 -4.48)
+		(end 5.32 3.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2416dc8f-96b7-44c4-b434-330dbcdac3d8")
+	)
+	(fp_line
+		(start -4.47 -3.4)
+		(end -4.47 3.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fac32174-d292-42f9-a378-6f7752b751b3")
+	)
+	(fp_line
+		(start -4.47 -3.4)
+		(end 4.47 -3.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e867e7f0-f472-4301-9a78-3426f24998ac")
+	)
+	(fp_line
+		(start -4.47 3.4)
+		(end 4.47 3.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "293d639b-ac52-48cc-824f-dff8485a639b")
+	)
+	(fp_line
+		(start 4.47 -3.4)
+		(end 4.47 3.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5d645dc2-cbdf-4d16-97bd-4d30ed2eadd6")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "d74164be-f5d6-443c-a856-bb43680c6f53")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "A5" smd roundrect
+		(at -0.5 -3.18)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "ab5d95eb-eba8-4bb7-8c23-bd21516491f0")
+	)
+	(pad "A9" smd roundrect
+		(at 1.52 -3.18)
+		(size 0.8 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "8fbbb031-3379-4644-80e5-136a13b37762")
+	)
+	(pad "A12" smd roundrect
+		(at 2.75 -3.18)
+		(size 0.9 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "0ef15f5d-0d69-4d6b-af1b-3af2ac11b1f6")
+	)
+	(pad "B5" smd roundrect
+		(at 0.5 -3.18)
+		(size 0.7 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "faa13af2-e95e-44dd-9d61-a329d3a3a4ea")
+	)
+	(pad "B9" smd roundrect
+		(at -1.52 -3.18)
+		(size 0.8 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "fd22b659-cb70-41f4-98ad-57f4da112786")
+	)
+	(pad "B12" smd roundrect
+		(at -2.75 -3.18)
+		(size 0.9 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c80f6050-c0da-4975-9a6c-e9a5d0cded6f")
+	)
+	(pad "S1" thru_hole oval
+		(at -4.32 -3)
+		(size 1 1.7)
+		(drill oval 0.5 1.2)
+		(property pad_prop_heatsink)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ade5acf4-3d53-4370-9afc-fd689d06d497")
+	)
+	(pad "S1" thru_hole oval
+		(at -4.32 0.8)
+		(size 1 1.7)
+		(drill oval 0.5 1.2)
+		(property pad_prop_heatsink)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "008f7cc4-fc5d-4774-b18b-bb67b90a77a7")
+	)
+	(pad "S1" thru_hole oval
+		(at 4.32 -3)
+		(size 1 1.7)
+		(drill oval 0.5 1.2)
+		(property pad_prop_heatsink)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0008001b-79c3-4ac4-a789-a0d959b02372")
+	)
+	(pad "S1" thru_hole oval
+		(at 4.32 0.8)
+		(size 1 1.7)
+		(drill oval 0.5 1.2)
+		(property pad_prop_heatsink)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "33ef0d7d-80f0-4e95-ae3c-134f532001dc")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4125-xx-x-0190_6P_TopMnt_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "odc-cc2500")(type "KiCad")(uri "${KIPRJMOD}/odc-cc2500.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,98 @@
+(version 2)
+# Kicad 8
+
+# Drilling
+(rule "Drill Diameter"
+	(constraint hole_size (min 0.15mm) (max 6.3mm)))
+
+(rule "Minimum Via Hole Size"
+	(constraint hole_size (min 0.2mm))
+	(condition "A.Type == 'via'"))
+
+(rule "Minimum Via Diameter"
+	(constraint via_diameter (min 0.35mm))
+	(condition "A.Type == 'via'"))
+
+(rule "Minimum NPTH Hole Size"
+	(constraint hole_size (min 0.5mm))
+	(condition "A.Type == 'pad' && !A.isPlated()"))
+
+(rule "Minimum PTH Hole Size"
+	(constraint hole_size (min 0.15mm) (max 6.3mm))
+	(condition "A.isPlated()"))
+
+(rule "Via Hole to Hole Clearance"
+	(constraint hole_to_hole (min 0.2mm)))
+
+(rule "Pad Hole to Hole Clearance"
+	(constraint hole_to_hole (min 0.45mm))
+	(condition "A.Type == 'pad' && B.Type == A.Type && A.Net != B.Net"))
+
+(rule "Minimum Castellated Hole Size"
+	(constraint hole_size (min 0.5mm))
+	(condition "A.Type == 'pad' && A.Fabrication_Property == 'Castellated pad'"))
+
+# Traces
+(rule "Minimum Trace Spacing"
+	(constraint clearance (min 0.1mm))
+	(layer inner)
+	(condition "A.Type == 'track' && B.Type == A.Type"))
+
+(rule "Minimum Trace Width"
+	(constraint track_width (min 0.1mm))
+	(layer inner)
+	(condition "A.Type == 'track'"))
+
+(rule "Minimum Trace Spacing"
+	(constraint clearance (min 0.1mm))
+	(layer outer)
+	(condition "A.Type == 'track' && B.Type == A.Type"))
+
+(rule "Minimum Trace Width"
+	(constraint track_width (min 0.1mm))
+	(layer outer)
+	(condition "A.Type == 'track'"))
+
+(rule "Minimum Via to Track Clearance"
+	(constraint hole_clearance (min 0.2mm))
+	(condition "A.Type == 'via' && B.Type == 'track'"))
+
+(rule "Minimum Via to Zone Clearance"
+	(constraint hole_clearance (min 0.2mm))
+	(condition "A.Type == 'via' && B.Type == 'zone'"))
+
+(rule "Minimum Pad to Track clearance"
+	(constraint clearance (min 0.1mm))
+	(condition "A.isPlated() && B.Type == 'track'"))
+
+(rule "Minimum SMD Pad to Pad Clearance"
+	(constraint clearance (min 0.15mm))
+	(condition "A.Type == 'pad' && B.Type == A.Type && A.Net != B.Net"))
+
+(rule "Minimum PTH to Track Clearance"
+	(constraint hole_clearance (min 0.35mm))
+	(condition "A.Pad_Type == 'PTH, mechanical' && B.Type == 'track'"))
+
+(rule "Minimum NPTH to Track Clearance"
+	(constraint hole_clearance (min 0.2mm))
+	(condition "A.Pad_Type == 'NPTH, mechanical' && B.Type == 'track'"))
+
+# Legend 
+(rule "Minimum Text Size"
+	(constraint text_thickness (min 0.15mm))
+	(constraint text_height (min 1mm))
+	(layer "?.Silkscreen"))
+
+(rule "Minimum Pad to Silkscreen"
+	(constraint silk_clearance (min 0.15mm))
+	(layer outer)
+	(condition "A.Type == 'pad' && (B.Type == 'text' || B.Type == 'graphic')"))
+
+# Outline
+(rule "Minimum Copper to Outline"
+	(constraint edge_clearance (min 0.2mm))
+	(condition "A.Type == 'track' || A.Type == 'zone'"))
+
+(rule "Minimum Trace to V-Cut"
+  (constraint clearance (min 0.4mm))
+	(condition "A.Type == 'track' && B.Layer == 'Edge.Cuts'"))
