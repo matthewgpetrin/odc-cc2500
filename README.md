@@ -9,15 +9,6 @@ The board is to be powered by a 5V DC source, which is regulated down to 3.3V. P
 
 The project is designed in KiCAD 9, and should be compatible with equal or greater versions. All required symbols and footprints are contained within.
 
----
-<kbd> 
-	<img src="https://github.com/matthewgpetrin/odc-cc2500/assets/front.png"/> 
-</kbd>
-
----
-<kbd> 
-	<img src="https://github.com/matthewgpetrin/odc-cc2500/assets/back.png"/> 
-</kbd>
 
 ## Part Selection:
 A BOM is provided in the repo. There are a few components which may be affected by manufacturing processes:
@@ -43,4 +34,14 @@ As of rev. 1.0, the mounting holes are not grounded.
 
 ## Datasheets:
 [CC2500](https://www.ti.com/lit/ds/symlink/cc2500.pdf?ts=1783648273403&)
+
+---
+<kbd> 
+	<img src="assets/front.png"/> 
+</kbd>
+
+---
+<kbd> 
+	<img src="assets/back.png"/> 
+</kbd>
 
