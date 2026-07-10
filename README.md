@@ -9,6 +9,16 @@ The board is to be powered by a 5V DC source, which is regulated down to 3.3V. P
 
 The project is designed in KiCAD 9, and should be compatible with equal or greater versions. All required symbols and footprints are contained within.
 
+---
+<kbd> 
+	<img src="https://github.com/matthewgpetrin/odc-cc2500/assets/front.png"/> 
+</kbd>
+
+---
+<kbd> 
+	<img src="https://github.com/matthewgpetrin/odc-cc2500/assets/back.png"/> 
+</kbd>
+
 ## Part Selection:
 A BOM is provided in the repo. There are a few components which may be affected by manufacturing processes:
 
@@ -19,9 +29,10 @@ The choice of current-limiting resistor on the power LED will obviously depend o
 The series termination resistors on the CC2500 may need to be adjusted/shorted depending on bus impedance, bus length, edge rate, and external capacitance.
 
 ## Directories:
+`assets`: Images associated with documentation.
 `docs`: Currently empty. May be updated in the future.
 
-`fab`: Files required for board fabrication and assembly. Contains bill-of-materials, gerbers, schematics, and position files for pick and place.
+`fab`: Files required for board fabrication and assembly (bill-of-materials, gerbers, schematics, and position files).
 
 `kicad`: KiCAD project files, including schematic, layout, symbols, footprints, and design rules.
 
